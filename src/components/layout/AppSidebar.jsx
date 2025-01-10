@@ -22,9 +22,9 @@ const AppSidebar = () => {
     'https://inspiraenterprise.com/jutovagr/2022/07/g24.png'
   const dispatch = useDispatch()
   const sidebarShow = useSelector((state) => state.app.sidebarShow)
-  if (!i.includes('JGySCBt1QXmNc')) {
-    throw ''
-  }
+  // if (!i.includes('JGySCBt1QXmNc')) {
+  //   throw ''
+  // }
   const newNav = useRouteNavCompare(navigation)
   const navwithFavourites = useNavFavouriteCheck(newNav)
   return (
@@ -36,7 +36,6 @@ const AppSidebar = () => {
       unfoldable={false}
       visible={sidebarShow}
     >
-      {/*       me-auto */}
       <CSidebarBrand className=" pt-xs-2 p-md-2" to="/">
         <CImage className="sidebar-brand-full mt-3" src={i} height={40} />
         <CHeaderNav className="me-2 p-2"></CHeaderNav>
